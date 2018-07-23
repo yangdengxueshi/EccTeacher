@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:minWidth="350dp"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/dp_5"
+    android:paddingTop="@dimen/dp_2"
+    tools:context=".fragment.ModifyMarkFragment">
+
+    <TextView
+        android:id="@+id/tv_mark_name_and_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/register_yellow_red"
+        android:textSize="@dimen/sp_18"
+        tools:text="卫生:3.5"/>
+
+    <RatingBar
+        android:id="@+id/rb_mark"
+        style="?android:attr/ratingBarStyleIndicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_20"
+        android:isIndicator="false"
+        android:numStars="10"/>
+
+    <EditText
+        android:id="@+id/et_mark_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_10"
+        android:background="@drawable/bg_content_detail"
+        android:gravity="top"
+        android:hint="@string/please_input_u_comment"
+        android:inputType="none"
+        android:minHeight="@dimen/dp_140"
+        android:padding="@dimen/dp_2"/>
+
+    <Button
+        android:id="@+id/btn_confirm_modify"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dp_40"
+        android:layout_marginStart="@dimen/dp_40"
+        android:background="@drawable/bg_page_btn"
+        android:text="@string/confirm_modify"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_18"/>
+</LinearLayout>

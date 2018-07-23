@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEEEE"
+    android:orientation="vertical"
+    tools:context=".activity.AttendanceStudentDetailActivity">
+
+    <include layout="@layout/toolbar_common"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:layout_marginEnd="@dimen/dp_10"
+        android:layout_marginStart="@dimen/sp_10"
+        android:layout_marginTop="@dimen/dp_5"
+        android:background="@drawable/bg_student_header">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/student_name"
+            android:textColor="#4F4F4F"
+            android:textSize="@dimen/sp_16"
+            tools:background="@color/red"/>
+
+        <View
+            android:layout_width="@dimen/dp_01"
+            android:layout_height="match_parent"
+            android:background="#EAEAEA"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="@string/student_id"
+            android:textColor="#4F4F4F"
+            android:textSize="@dimen/sp_16"
+            tools:background="@color/orange"/>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_attend_student_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="@dimen/dp_10"
+        android:layout_marginStart="@dimen/dp_10"
+        tools:background="@color/blue"/>
+</LinearLayout>

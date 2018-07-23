@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.ClassStyleDetailActivity">
+
+    <include layout="@layout/toolbar_common"/>
+
+    <com.classic.common.MultipleStatusView
+        android:id="@+id/refresh_multiple_status_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:emptyView="@layout/custom_empty_view"
+        app:errorView="@layout/custom_error_view"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        app:loadingView="@layout/custom_loading_view"
+        app:noNetworkView="@layout/custom_no_network_view">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.zhouwei.mzbanner.MZBannerView
+                android:id="@+id/mzbv_class_style_detail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:transitionName="@string/picture_detail"
+                app:open_mz_mode="false"
+                tools:background="#FF0000"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_200"
+                android:layout_gravity="bottom"
+                android:background="@drawable/img_class_style_detail"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_class_style_detail_index"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp_20"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_25"
+                    tools:background="#330000"
+                    tools:text="1/3"/>
+
+                <ScrollView
+                    android:id="@+id/sv_scroll"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tv_class_style_detail_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingEnd="@dimen/dp_20"
+                        android:paddingStart="@dimen/dp_20"
+                        android:textColor="@color/white"
+                        tools:background="#00FF00"/>
+                </ScrollView>
+            </LinearLayout>
+        </FrameLayout>
+    </com.classic.common.MultipleStatusView>
+</LinearLayout>

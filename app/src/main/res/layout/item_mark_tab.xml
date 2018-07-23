@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:background="@color/red">
+    <!--    FIXME layout_height="wrap_content",如果为match_parent,那么在第二次加载Badge的时候,Tab布局会出现问题    -->
+    <View
+        android:id="@+id/v_badge_target"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:background="@color/yellow"/>
+
+    <TextView
+        android:id="@+id/tv_tab_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:singleLine="true"
+        android:textColor="@drawable/selector_tab_text_color"
+        tools:background="@color/orange"
+        tools:text="标题"/>
+</FrameLayout>

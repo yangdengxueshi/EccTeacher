@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.RecyclerView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rv_item_leave"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/sp_10"
+    android:background="@drawable/bg_white_rounded_rectangle"
+    android:nestedScrollingEnabled="false"
+    tools:listitem="@layout/item_apply_leave"/>

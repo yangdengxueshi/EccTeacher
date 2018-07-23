@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.MarkingDetailActivity">
+
+    <include layout="@layout/toolbar_common"/>
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/srl_smart_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F4F4F4"
+        app:srlDragRate="0.7"
+        app:srlEnableAutoLoadMore="true"
+        app:srlEnableFooterFollowWhenLoadFinished="false"
+        app:srlHeaderHeight="150dp"
+        app:srlHeaderMaxDragRate="1.3"
+        app:srlHeaderTriggerRate="0.5"
+        app:srlPrimaryColor="@android:color/holo_green_light">
+
+        <com.scwang.smartrefresh.header.PhoenixHeader
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_marking_detail_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/dp_10"
+            android:layout_marginStart="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_5"
+            android:overScrollMode="never"
+            android:paddingEnd="@dimen/dp_5"
+            android:paddingStart="@dimen/dp_5"
+            tools:background="@color/green"
+            tools:listitem="@layout/item_marking_detail"/>
+
+        <com.scwang.smartrefresh.layout.footer.ClassicsFooter
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_score_container"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_50">
+
+    <TextView
+        android:id="@+id/tv_student_name"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textColor="#2FCDEA"
+        android:textSize="@dimen/sp_16"
+        tools:background="@color/red"
+        tools:text="杨灯"/>
+
+    <View
+        android:layout_width="@dimen/dp_01"
+        android:layout_height="match_parent"
+        android:background="#EAEAEA"/>
+
+    <TextView
+        android:id="@+id/tv_course_name"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textColor="#4F4F4F"
+        android:textSize="@dimen/sp_16"
+        tools:background="@color/orange"
+        tools:text="100"/>
+
+    <View
+        android:layout_width="@dimen/dp_01"
+        android:layout_height="match_parent"
+        android:background="#EAEAEA"/>
+
+    <TextView
+        android:id="@+id/tv_choose_status"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textColor="#4F4F4F"
+        android:textSize="@dimen/sp_16"
+        tools:background="@color/yellow"
+        tools:text="1"/>
+</LinearLayout>

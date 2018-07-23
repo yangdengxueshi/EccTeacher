@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingEnd="@dimen/dp_5"
+    android:paddingStart="@dimen/dp_5">
+
+    <ImageView
+        android:id="@+id/iv_publisher_avatar"
+        android:layout_width="@dimen/dp_50"
+        android:layout_height="@dimen/dp_50"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/dp_5"
+        android:contentDescription="@null"
+        tools:src="@drawable/ic_default_avatar"/>
+
+    <TextView
+        android:id="@+id/tv_publisher_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_toEndOf="@id/iv_publisher_avatar"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:maxWidth="@dimen/dp_300"
+        android:textColor="#888888"
+        android:textSize="@dimen/sp_14"
+        tools:text="往事不堪回首"/>
+
+    <TextView
+        android:id="@+id/tv_publish_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/tv_publisher_name"
+        android:layout_alignParentEnd="true"
+        android:maxLines="1"
+        android:maxWidth="@dimen/dp_300"
+        android:textColor="#707070"
+        android:textSize="@dimen/sp_10"
+        tools:text="2018-1-2 14:37:16"/>
+
+    <TextView
+        android:id="@+id/tv_publish_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_publisher_name"
+        android:layout_marginBottom="@dimen/dp_5"
+        android:layout_marginTop="@dimen/dp_5"
+        android:layout_toEndOf="@id/iv_publisher_avatar"
+        android:textColor="#333333"
+        android:textSize="@dimen/sp_12"
+        tools:text="AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABBBBBBBBBBBBBBBBBBBBBBBBBBBCCCCCCCCCCCCCCCCCCCCCCCCCCCC"/>
+
+    <TextView
+        android:id="@+id/btn_reply"
+        android:layout_width="@dimen/dp_30"
+        android:layout_height="@dimen/dp_30"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/tv_publish_content"
+        android:drawableEnd="@drawable/ic_reply"/>
+</RelativeLayout>

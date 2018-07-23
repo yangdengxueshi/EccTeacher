@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_reply"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_content_detail"
+    android:gravity="center_vertical"
+    android:visibility="gone"
+    tools:visibility="visible">
+
+    <EditText
+        android:id="@+id/et_reply_content"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_5"
+        android:layout_weight="1"
+        android:background="@drawable/bg_reply_txt"
+        android:hint="@string/reply_content"
+        android:inputType="none"
+        android:minHeight="38dp"
+        android:textColor="#FF000000"
+        android:textSize="@dimen/sp_16"/>
+
+    <Button
+        android:id="@+id/btn_reply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_5"
+        android:background="@drawable/bg_page_btn_disable"
+        android:enabled="false"
+        android:minHeight="35dp"
+        android:minWidth="@dimen/dp_50"
+        android:text="@string/reply"
+        android:textColor="@color/white"/>
+</LinearLayout>

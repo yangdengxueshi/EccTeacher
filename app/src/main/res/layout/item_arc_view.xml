@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.github.florent37.arclayout.ArcLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:arc_cropDirection="cropOutside"
+        app:arc_height="30dp"
+        app:arc_position="bottom"
+        app:layout_constraintDimensionRatio="H,12:5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_banner_item"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@null"
+            android:scaleType="centerCrop"/>
+    </com.github.florent37.arclayout.ArcLayout>
+</android.support.constraint.ConstraintLayout>

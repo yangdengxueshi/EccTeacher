@@ -1,0 +1,127 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+    defaultConfig {
+        applicationId "com.dexin.eccteacher"
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.compileSdkVersion
+        multiDexEnabled true
+        versionCode rootProject.ext.versionCode
+        versionName rootProject.ext.versionName
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    sourceSets {
+        main {
+            jni.srcDirs = []
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility 8
+        targetCompatibility 8
+    }
+    dexOptions {
+        preDexLibraries = false
+        javaMaxHeapSize "4g"
+    }
+}
+
+dependencies {
+    api project(':IMKit')
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlinVersion"
+    implementation "com.android.support:appcompat-v7:$supportLibVersion"
+    implementation "com.android.support:support-v4:$supportLibVersion"
+    implementation "com.android.support:palette-v7:$supportLibVersion"
+    implementation "com.android.support:design:$supportLibVersion"
+    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
+    implementation 'com.android.support:multidex:1.0.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:3.0.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+
+    implementation "com.jakewharton:butterknife:$butterKnifeVersion"
+    annotationProcessor "com.jakewharton:butterknife-compiler:$butterKnifeVersion"
+//    kapt "com.jakewharton:butterknife-compiler:$butterKnifeVersion"
+
+    debugImplementation "com.squareup.leakcanary:leakcanary-android:$leakCanaryVersion"
+    releaseImplementation "com.squareup.leakcanary:leakcanary-android-no-op:$leakCanaryVersion"
+    testImplementation "com.squareup.leakcanary:leakcanary-android-no-op:$leakCanaryVersion"
+
+    implementation 'com.gyf.barlibrary:barlibrary:2.3.0'
+
+    implementation "com.github.bumptech.glide:glide:$glideVersion"
+    annotationProcessor "com.github.bumptech.glide:compiler:$glideVersion"
+    implementation 'jp.wasabeef:glide-transformations:3.3.0'
+
+    implementation 'org.greenrobot:eventbus:3.1.1'
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.0.3'
+
+    implementation "com.github.vondear.RxTool:RxKit:v2.1.4"
+    implementation 'com.blankj:utilcode:1.17.3'
+    implementation 'com.squareup.okhttp3:okhttp:3.11.0'
+    implementation 'com.google.code.gson:gson:2.8.2'
+    implementation 'org.litepal.android:core:2.0.0'
+
+    implementation 'com.github.chrisbanes:PhotoView:2.1.3'
+    implementation 'com.github.florent37:arclayout:1.0.3'
+    implementation 'com.github.pinguo-zhouwei:MZBannerView:v2.0.2'
+    implementation 'com.romandanylyk:pageindicatorview:1.0.1@aar'
+    implementation 'com.github.tbruyelle:rxpermissions:0.10.2'
+    implementation 'io.reactivex.rxjava2:rxjava:2.1.16'
+//    implementation 'io.reactivex.rxjava2:rxandroid:2.0.2'
+//    implementation 'com.squareup.retrofit2:retrofit:2.4.0'
+    implementation 'com.github.anrwatchdog:anrwatchdog:1.3.0'
+    implementation 'org.jetbrains:annotations:15.0'
+
+    implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.40'
+
+    implementation 'com.github.ittianyu:BottomNavigationViewEx:1.2.4'
+    implementation 'q.rorbin:badgeview:1.1.3'
+    implementation 'com.github.lygttpod:SuperTextView:2.1.7'
+    implementation 'com.liulishuo.filedownloader:library:1.7.4'
+    implementation 'com.yalantis:ucrop:2.2.0'
+    implementation 'com.github.dongjunkun:DropDownMenu:1.0.4'
+
+    implementation 'com.wang.avi:library:2.1.3'
+    implementation 'com.classic.common:multiple-status-view:1.5.1'
+    implementation 'com.github.maning0303:MNProgressHUD:V1.1.0'
+    implementation 'com.afollestad.material-dialogs:commons:0.9.6.0'
+    implementation 'com.lcodecorex:tkrefreshlayout:1.0.7'
+    implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0-alpha-12'
+    implementation 'com.scwang.smartrefresh:SmartRefreshHeader:1.1.0-alpha-12'
+
+    implementation 'cn.dreamtobe.kpswitch:library:1.6.1'
+    implementation 'com.contrarywind:Android-PickerView:4.1.5'
+    implementation 'com.github.XunMengWinter:CircularAnim:0.4.1'
+    implementation 'com.github.githubwing:ByeBurger:1.2.3'
+
+    implementation 'com.just.agentweb:agentweb:4.0.2'
+    implementation 'com.coolindicator.sdk:coolindicator:1.0.0-beta'
+
+    api 'me.yokeyword:fragmentation-core:1.3.5'
+    api 'me.yokeyword:fragmentation-swipeback:1.3.5'// swipeback基于fragmentation, 如果是自定制SupportActivity/Fragment，则参照SwipeBackActivity/Fragment实现即可
+//    api 'me.yokeyword:eventbus-activity-scope:1.1.7'// Activity作用域的EventBus，更安全，可有效避免after onSavenInstanceState()异常
+
+//    compile 'com.lzy.net:okgo:+'//必须使用
+//    implementation 'com.airbnb.android:lottie:2.5.6'
+}
+
+configurations.all {
+    resolutionStrategy.eachDependency { details ->
+        def requested = details.requested
+        if ((requested.group == 'com.android.support') && (!requested.name.startsWith("multidex"))) details.useVersion rootProject.ext.supportLibVersion
+    }
+}

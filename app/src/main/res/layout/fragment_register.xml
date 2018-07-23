@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".fragment.LoginFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="@color/register_yellow_red"/>
+
+        <include layout="@layout/include_titlebar"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/action_bar_size">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.618"
+                android:gravity="center"
+                android:text="@string/telphone_no"
+                android:textColor="@color/register_label_color"/>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <EditText
+                    android:id="@+id/et_telphone_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:hint="@string/please_input_telphone_no"
+                    android:inputType="number"
+                    android:maxLength="11"/>
+
+                <ImageView
+                    android:id="@+id/iv_clean_account"
+                    android:layout_width="36dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end"
+                    android:layout_margin="@dimen/dp_10"
+                    android:background="@drawable/selector_circle_click"
+                    android:contentDescription="@null"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_clear"
+                    android:visibility="gone"/>
+            </FrameLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_01"
+            android:layout_marginEnd="@dimen/dp_10"
+            android:layout_marginStart="@dimen/dp_10"
+            android:background="@color/divide_line_color"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/action_bar_size">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.618"
+                android:gravity="center"
+                android:text="@string/identifying_code"
+                android:textColor="@color/register_label_color"/>
+
+            <EditText
+                android:id="@+id/et_identifying_code"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6"
+                android:background="@null"
+                android:hint="@string/click_to_gain_identifying_code"
+                android:inputType="none"/>
+
+            <Button
+                android:id="@+id/btn_gain_identifying_code"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/dp_1"
+                android:layout_weight="0.4"
+                android:background="@drawable/bg_register_page_btn"
+                android:text="@string/gain_identifying_code"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_01"
+            android:layout_marginEnd="@dimen/dp_10"
+            android:layout_marginStart="@dimen/dp_10"
+            android:background="@color/divide_line_color"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/action_bar_size"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.618"
+                android:gravity="center"
+                android:text="@string/password"
+                android:textColor="@color/register_label_color"/>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toStartOf="@id/iv_clean_pwd"
+                    app:hintEnabled="false"
+                    app:passwordToggleDrawable="@drawable/selector_show_hide_pwd"
+                    app:passwordToggleEnabled="true">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/actv_pwd"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:hint="@string/please_input_pwd"
+                        android:inputType="textWebPassword"
+                        android:maxLength="18"
+                        android:maxLines="1"
+                        android:textSize="18sp"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <ImageView
+                    android:id="@+id/iv_clean_pwd"
+                    android:layout_width="36dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_gravity="end"
+                    android:layout_margin="@dimen/dp_10"
+                    android:background="@drawable/selector_circle_click"
+                    android:contentDescription="@null"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_clear"
+                    android:visibility="gone"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_01"
+            android:layout_marginEnd="@dimen/dp_10"
+            android:layout_marginStart="@dimen/dp_10"
+            android:background="@color/divide_line_color"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/action_bar_size"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.618"
+                android:gravity="center"
+                android:text="@string/confirm_pwd"
+                android:textColor="@color/register_label_color"/>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toStartOf="@id/iv_clean_confirm_pwd"
+                    app:hintEnabled="false"
+                    app:passwordToggleDrawable="@drawable/selector_show_hide_pwd"
+                    app:passwordToggleEnabled="true">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/actv_confirm_pwd"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:hint="@string/please_confirm_pwd"
+                        android:inputType="textWebPassword"
+                        android:maxLength="18"
+                        android:maxLines="1"
+                        android:textSize="18sp"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <ImageView
+                    android:id="@+id/iv_clean_confirm_pwd"
+                    android:layout_width="36dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_gravity="end"
+                    android:layout_margin="@dimen/dp_10"
+                    android:background="@drawable/selector_circle_click"
+                    android:contentDescription="@null"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_clear"
+                    android:visibility="gone"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_01"
+            android:layout_marginEnd="@dimen/dp_10"
+            android:layout_marginStart="@dimen/dp_10"
+            android:background="@color/divide_line_color"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/action_bar_size">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.618"
+                android:gravity="center"
+                android:text="@string/code_code"
+                android:textColor="@color/register_label_color"/>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <EditText
+                    android:id="@+id/et_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:hint="@string/please_input_code_code"
+                    android:inputType="none"/>
+
+                <ImageView
+                    android:id="@+id/iv_clean_code"
+                    android:layout_width="36dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end"
+                    android:layout_margin="@dimen/dp_10"
+                    android:background="@drawable/selector_circle_click"
+                    android:contentDescription="@null"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_clear"
+                    android:visibility="gone"/>
+            </FrameLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_01"
+            android:layout_marginEnd="@dimen/dp_10"
+            android:layout_marginStart="@dimen/dp_10"
+            android:background="@color/divide_line_color"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/action_bar_size">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.618"
+                android:gravity="center"
+                android:text="@string/card_no"
+                android:textColor="@color/register_label_color"/>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <EditText
+                    android:id="@+id/et_card_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:hint="@string/please_input_card_no"
+                    android:inputType="none"/>
+
+                <ImageView
+                    android:id="@+id/iv_clean_card_no"
+                    android:layout_width="36dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end"
+                    android:layout_margin="@dimen/dp_10"
+                    android:background="@drawable/selector_circle_click"
+                    android:contentDescription="@null"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_clear"
+                    android:visibility="gone"/>
+            </FrameLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_01"
+            android:layout_marginEnd="@dimen/dp_10"
+            android:layout_marginStart="@dimen/dp_10"
+            android:background="@color/divide_line_color"/>
+
+        <Button
+            android:id="@+id/btn_confirm_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="60dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="@dimen/dp_10"
+            android:background="@drawable/bg_register_page_btn"
+            android:text="@string/confirm_register"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/tv_agree_register_protocol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dp_10"
+            tools:text="@string/agree_register_protocol"/>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

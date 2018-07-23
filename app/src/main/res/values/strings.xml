@@ -1,0 +1,236 @@
+<resources>
+    <string name="app_name">德芯教师</string>
+
+    <declare-styleable name="RxAutoImageView">
+        <attr name="ImageSrc" format="reference"/>
+    </declare-styleable>
+
+    <!--    通用文本    -->
+    <string name="confirm">确定</string>
+    <string name="cancel">取消</string>
+    <string name="telphone_no">手机号码</string>
+    <string name="please_input_telphone_no">请输入手机号</string>
+    <string name="telphone_no_format_error">手机号格式错误!</string>
+    <string name="identifying_code">验证码</string>
+    <string name="click_to_gain_identifying_code">点击按钮获取</string>
+    <string name="gain_identifying_code">获取验证码</string>
+    <string name="please_input_pwd">请输入密码</string>
+    <string name="please_confirm_pwd">请确认密码</string>
+    <string name="new_password">新密码</string>
+
+    <!--    LoginFragment   -->
+    <string name="forget_pwd_or_not">忘记密码?</string>
+    <string name="login">登录</string>
+    <string name="new_user_to_register">新用户注册</string>
+
+    <!--    HomeFragment    -->
+    <string name="news_and_info">新闻资讯</string>
+    <string name="more">更多</string>
+
+    <!--    DealNonNetFragment     -->
+    <string name="cur_net_unavailable">当前无可用网络!</string>
+    <string name="confirm_to_open_net_page">确定打开网络设置页面吗?</string>
+
+    <!--    TitleBar    -->
+    <string name="title">标题</string>
+
+    <!--    RegisterFragment    -->
+    <string name="agree_register_protocol">点击"注册"即表示同意《德芯APP注册服务协议》</string>
+    <string name="password">密码</string>
+    <string name="confirm_pwd">确认密码</string>
+    <string name="please_input_pwd_again">请再次输入密码</string>
+    <string name="code_code">Code码</string>
+    <string name="please_input_code_code">请输入Code码</string>
+    <string name="card_no">卡号</string>
+    <string name="please_input_card_no">请输入卡号</string>
+    <string name="confirm_register">确认注册</string>
+
+    <!--    ForgetPwdFragment   -->
+    <string name="please_input_new_pwd">请输入新密码</string>
+    <string name="please_confirm_new_pwd">请确认新密码</string>
+
+    <!--    ModifyPwdFragment   -->
+    <string name="old_password">旧密码</string>
+    <string name="please_input_old_pwd">请输入旧密码</string>
+    <string name="confirm_modify">确定修改</string>
+
+    <!--    BottomNavigationView    -->
+    <string name="home_page">首页</string>
+    <string name="chat">聊天</string>
+    <string name="contacts">通讯录</string>
+    <string name="mine">我的</string>
+    <string name="person_center">个人中心</string>
+
+    <!--    MineFragment    -->
+    <string name="person_info">个人资料</string>
+    <string name="setting">设置</string>
+
+    <!--    SettingFragment    -->
+    <string name="modify_pwd">修改密码</string>
+    <string name="check_to_update">检查更新</string>
+    <string name="log_off">退出登录</string>
+
+    <!--    UpdateFragment  -->
+    <string name="update_or_not">是否更新?</string>
+    <string name="yes">是</string>
+    <string name="no">否</string>
+    <string name="new_version_checked">检测到V1.2.1新版本</string>
+    <string name="cur_non_wifi_envi_pay_attention_to_data_rate">当前非WiFi环境,请注意流量资费!</string>
+    <string name="continue_or_not">是否继续?</string>
+    <string name="yes_continue">继续</string>
+
+    <!--    PersonInfoActivity  -->
+    <string name="change_avatar">头像更换</string>
+    <string name="user_name">用户名称</string>
+    <string name="sex">性别</string>
+
+    <!-- TeacherInfoActivity -->
+    <string name="take_photo">拍照</string>
+    <string name="choose_from_album">相册选取</string>
+    <string name="save">保存</string>
+    <string name="please_input_name">请输入姓名</string>
+    <string name="male">男</string>
+    <string name="female">女</string>
+
+    <!-- QueryScoreActivity -->
+    <string name="student_name">学生姓名</string>
+    <string name="student_id">学生学号</string>
+    <string name="total_score">成绩总分</string>
+    <string name="class_ranking">班级排名</string>
+    <string name="grade_ranking">年级排名</string>
+
+    <!-- PersonScoreActivity -->
+    <string name="subject">科目</string>
+    <string name="score">分数</string>
+
+    <!-- HomeworkActivity -->
+    <string name="publish">发布</string>
+
+    <!-- FeedbackActivity -->
+    <string name="reply">回复</string>
+    <string name="reply_content">回复内容</string>
+
+    <!-- PublishClassNoticeActivity -->
+    <string name="grade_select">年级选择</string>
+    <string name="please_select_grade">请选择年级</string>
+    <string name="class_select">班级选择</string>
+    <string name="please_select_class">请选择班级</string>
+    <string name="notice_level">通知级别</string>
+    <string name="please_select_notice_level">请选择通知级别</string>
+    <string name="confirm_publish">确认发布</string>
+    <string name="notice_title">通知标题</string>
+    <string name="please_input_title_content">请输入标题内容</string>
+    <string name="please_input_notice_content">请输入通知内容描述</string>
+    <string name="upload_pic">上传图片</string>
+    <string name="push_notice_or_not">是否推送通知</string>
+    <string-array name="class_notice_level">
+        <item>请选择级别</item>
+        <item>教师App,家长App,学校班牌</item>
+        <item>教师App,家长App</item>
+        <item>教师App</item>
+    </string-array>
+
+    <!-- PublishHomeworkActivity -->
+    <string name="please_select_course">请选择课程</string>
+    <string name="please_input_homework_content">请输入作业内容描述</string>
+    <string name="course_select">课程选择</string>
+    <string name="time_to_finish">完成时间</string>
+    <string name="please_selecte_finish_time">请选择完成时间</string>
+
+    <!-- ApplyClassroomActivity -->
+    <string name="apply">申请</string>
+
+    <!-- ApplyLeaveActivity -->
+    <string name="leave_class">请假类别</string>
+    <string name="please_select_leave_class">请选择类别</string>
+    <string name="leave_date">请假日期</string>
+    <string name="please_select_leave_date">请选择日期</string>
+    <string name="leave_time">请假时间</string>
+    <string name="please_select_leave_time">请选择时间</string>
+    <string name="please_input_leave_detail">请输入请假具体事由</string>
+    <string name="confirm_apply">确认申请</string>
+    <string-array name="leave_class">
+        <item>请选择类别</item>
+        <item>病假</item>
+        <item>事假</item>
+        <item>换休</item>
+        <item>年假</item>
+    </string-array>
+
+    <!-- AttendanceStatisticsActivity -->
+    <string name="please_select_grade_class">年级班级选择</string>
+    <string name="please_select_date">日期选择</string>
+    <string name="attendance_rate_percent">签到率百分比</string>
+    <string name="late">迟到</string>
+    <string name="normal">正常</string>
+    <string name="not_signed">未签到</string>
+    <string name="signed_num_atatistics">签到人数统计</string>
+
+    <!-- ClassCardStatisticsActivity -->
+    <string name="swipe_card_num_percent">  刷卡次数百分比</string>
+    <string name="swipe_normally">正常刷卡</string>
+    <string name="swipe_abnormally">异常刷卡</string>
+    <string name="swipe_num_statistics">  刷卡次数统计</string>
+
+    <!--ApplyLeaveActivity -->
+    <string name="agree">同意</string>
+    <string name="cancel_exam">取消审核</string>
+    <string name="disagree">不同意</string>
+
+    <!-- AttendanceStatisticsActivity -->
+    <string name="query_date">日期选择</string>
+
+    <!-- MarkingActivity -->
+    <string name="campus">全校</string>
+    <string name="grade">年级</string>
+    <string name="class_">班级</string>
+
+    <!-- MarkingActivity -->
+    <string name="ranking">排名</string>
+    <string name="moral_total_score">德育总分</string>
+
+    <!-- FaultRepairActivity -->
+    <string name="repair">报修</string>
+
+    <!-- MarkingDetailActivity -->
+    <string name="score_"> 分</string>
+    <string name="teacher_comment">教师评语:</string>
+    <string name="mark">评分</string>
+
+    <!-- Do MarkActivity -->
+    <string name="please_input_u_comment">请输入您的评语</string>
+    <string name="confirm_submit">确认提交</string>
+
+    <!-- WebViewActivity -->
+    <string name="web_support">网页由 德芯科技 提供\n已启用QQ浏览器X5内核</string>
+
+    <!-- DoApplyClassroomActivity -->
+    <string name="teaching_building">教 学 楼</string>
+    <string name="select_classroom">教室选择</string>
+    <string name="start_time">开始时间</string>
+    <string name="please_select_start_time">请选择开始时间</string>
+    <string name="end_time">结束时间</string>
+    <string name="please_select_end_time">请选择结束时间</string>
+    <string name="please_input_apply_usage_detail">请输入申请教室用途</string>
+    <string name="cancel_apply">取消申请</string>
+
+    <!-- FaultRepairActivity -->
+    <string name="accepted">开始受理</string>
+    <string name="handled">处理完成</string>
+
+    <!-- SearchContActivity -->
+    <string name="please_input_search_key">请输入搜索关键字</string>
+
+    <!-- ZoomPictureActivity -->
+    <string name="picture_detail">图片详情</string>
+
+    <!-- SubmitFaultActivity -->
+    <string name="please_select_fault_class">请选择类型</string>
+    <string name="fault_class">故障类型</string>
+    <string name="please_input_fault_content">请输入故障事项详细描述</string>
+    <string name="please_input_fault_class">请输入故障类型</string>
+
+    <!-- WalkingClassSelectionActivity -->
+    <string name="choose_course_name">选课名称</string>
+    <string name="choose_course_status">选课状态</string>
+</resources>

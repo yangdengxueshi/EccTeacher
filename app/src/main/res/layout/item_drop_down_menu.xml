@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tv_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center"
+    android:maxLines="1"
+    android:minHeight="?android:attr/listPreferredItemHeightSmall"
+    android:paddingEnd="@dimen/dp_5"
+    android:paddingStart="@dimen/dp_5"
+    android:textAppearance="?android:attr/textAppearanceListItemSmall"
+    tools:background="@color/red"
+    tools:text="请选择"/>

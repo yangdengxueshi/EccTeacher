@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.PersonScoreActivity">
+
+    <include layout="@layout/toolbar_common"/>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/srl_swipe_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.yyydjk.library.DropDownMenu
+            android:id="@+id/ddm_query_person_score"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:dddividerColor="#E6E6E6"
+            app:ddmaskColor="#EAEAEA"
+            app:ddmenuBackgroundColor="@color/white"
+            app:ddmenuMenuHeightPercent="0.5"
+            app:ddmenuSelectedIcon="@drawable/ic_drop_down_selected"
+            app:ddmenuTextSize="@dimen/sp_16"
+            app:ddmenuUnselectedIcon="@drawable/ic_drop_down_unselected"
+            app:ddtextSelectedColor="#C9C9C9"
+            app:ddtextUnselectedColor="#FE6E28"
+            app:ddunderlineColor="#00000000"
+            tools:background="#ff0006"/>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>

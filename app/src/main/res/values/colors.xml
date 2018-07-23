@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">@color/register_yellow_red</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!--    自定义颜色-->
+    <color name="colorEntrance_00">#30DD9E</color>
+    <color name="colorEntrance_01">#74CEE8</color>
+    <color name="colorEntrance_02">#7BA0F1</color>
+    <color name="colorEntrance_03">#FF9B69</color>
+    <color name="colorEntrance_04">#DFC273</color>
+    <color name="colorEntrance_05">#7AA0F1</color>
+    <color name="colorEntrance_06">#FF9B69</color>
+    <color name="colorEntrance_07">#30DD9E</color>
+    <color name="colorEntrance_08">#DFC274</color>
+    <color name="colorEntrance_09">#30DD9E</color>
+    <color name="colorEntrance_10">#7BA0F1</color>
+    <color name="colorEntrance_11">#74CEE8</color>
+
+    <color name="translucent_black_4D">#11000000</color>
+    <color name="translucent_black_66">#66000000</color>
+    <color name="custom_green">#45B514</color>
+    <color name="pink">#E61A5F</color>
+    <color name="register_yellow_red">#FE6E28</color>
+    <color name="custom_green_dark">#58BB2C</color>
+    <color name="register_label_color">#333333</color>
+    <color name="divide_line_color">#C9C9C9</color>
+    <color name="selected">#FE6E28</color>
+    <color name="unselected">#999999</color>
+    <color name="operate_failed">#D72912</color>
+    <color name="light_black">#fd383838</color>
+</resources>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEEEE"
+    android:orientation="vertical"
+    android:paddingEnd="@dimen/dp_10"
+    android:paddingStart="@dimen/dp_10"
+    android:paddingTop="@dimen/dp_5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:background="@drawable/bg_student_header">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/subject"
+            android:textColor="#4F4F4F"
+            android:textSize="@dimen/sp_16"
+            tools:background="@color/red"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/score"
+            android:textColor="#4F4F4F"
+            android:textSize="@dimen/sp_16"
+            tools:background="@color/orange"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/class_ranking"
+            android:textColor="#4F4F4F"
+            android:textSize="@dimen/sp_16"
+            tools:background="@color/yellow"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/grade_ranking"
+            android:textColor="#4F4F4F"
+            android:textSize="@dimen/sp_16"
+            tools:background="@color/green"/>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_person_score_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:background="@color/blue"/>
+</LinearLayout>

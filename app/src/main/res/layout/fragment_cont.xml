@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.scwang.smartrefresh.layout.SmartRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/srf_smart_refresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:srlAccentColor="@android:color/white"
+    app:srlEnableFooterFollowWhenLoadFinished="false"
+    app:srlEnableLoadMore="false"
+    app:srlFixedHeaderViewId="@id/tl_cont_classify"
+    app:srlPrimaryColor="@color/register_yellow_red"
+    tools:context=".fragment.ContFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tl_cont_classify"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            app:tabIndicatorColor="@color/register_yellow_red"
+            app:tabIndicatorHeight="@dimen/dp_1"
+            app:tabMode="fixed"
+            app:tabSelectedTextColor="@color/selected"
+            app:tabTextColor="@color/unselected"
+            tools:background="@color/green"/>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_cont_classify"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:nestedScrollingEnabled="false"
+            android:overScrollMode="never"
+            tools:background="@color/brown"/>
+    </LinearLayout>
+</com.scwang.smartrefresh.layout.SmartRefreshLayout>

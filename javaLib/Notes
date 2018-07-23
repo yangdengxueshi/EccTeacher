@@ -1,0 +1,52 @@
+/*
+    //启动会话列表Activity
+    Map<String, Boolean> hashMap = new HashMap<>();
+    hashMap.put(Conversation.ConversationType.PRIVATE.getName(), false);//会话类型 以及是否聚合显示
+    hashMap.put(Conversation.ConversationType.PUSH_SERVICE.getName(), true);
+    hashMap.put(Conversation.ConversationType.SYSTEM.getName(), true);
+    RongIM.getInstance().startConversationList(CustomApplication.getContext(), hashMap);
+
+
+
+*/
+
+    /**
+     * <p>启动会话界面。</p>
+     * <p>使用时，可以传入多种会话类型 {@link io.rong.imlib.model.Conversation.ConversationType} 对应不同的会话类型，开启不同的会话界面。
+     * 如果传入的是 {@link io.rong.imlib.model.Conversation.ConversationType#CHATROOM}，sdk 会默认调用
+     * {@link RongIMClient#joinChatRoom(String, int, RongIMClient.OperationCallback)} 加入聊天室。
+     * 如果你的逻辑是，只允许加入已存在的聊天室，请使用接口 {@link #startChatRoomChat(Context, String, boolean)} 并且第三个参数为 true</p>
+     *
+     * @param context          应用上下文。
+     * @param conversationType 会话类型。
+     * @param targetId         根据不同的 conversationType，可能是用户 Id、群组 Id 或聊天室 Id。
+     * @param title            聊天的标题，开发者可以在聊天界面通过 intent.getData().getQueryParameter("title") 获取该值, 再手动设置为标题。
+     */
+    public void startConversation(Context context, Conversation.ConversationType conversationType, String targetId, String title)
+
+    /**
+     * 启动会话列表界面。
+     *
+     * @param context               应用上下文。
+     * @param supportedConversation 定义会话列表支持显示的会话类型，及对应的会话类型是否聚合显示。
+     *                              例如：supportedConversation.put(Conversation.ConversationType.PRIVATE.getName(), false) 非聚合式显示 private 类型的会话。
+     */
+    public void startConversationList(Context context, Map<String, Boolean> supportedConversation)
+
+    /**
+     * 启动聚合后的某类型的会话列表。<br> 例如：如果设置了单聊会话为聚合，则通过该方法可以打开包含所有的单聊会话的列表。
+     *
+     * @param context          应用上下文。
+     * @param conversationType 会话类型。
+     */
+    public void startSubConversationList(Context context, Conversation.ConversationType conversationType)
+
+
+
+https://github.com/byc4426/ImageWatcher
+
+
+https://github.com/jeasonlzy/NineGridView
+
+
+https://github.com/martin90s/ImagePicker

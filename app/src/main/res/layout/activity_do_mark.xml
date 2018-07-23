@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.DoMarkActivity">
+
+    <include layout="@layout/toolbar_common"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:orientation="horizontal">
+
+        <Spinner
+            android:id="@+id/s_select_grade"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:dropDownVerticalOffset="?attr/actionBarSize"
+            android:textAlignment="center"
+            android:textColor="@color/register_yellow_red"/>
+
+        <include
+            layout="@layout/vertical_divide_line_1"
+            android:layout_width="@dimen/dp_1"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/dp_5"
+            android:layout_marginTop="@dimen/dp_5"/>
+
+        <Spinner
+            android:id="@+id/s_select_class"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:dropDownVerticalOffset="?attr/actionBarSize"
+            android:textAlignment="center"
+            android:textColor="@color/register_yellow_red"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tl_mark_classify"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            app:tabIndicatorColor="@color/register_yellow_red"
+            app:tabIndicatorHeight="@dimen/dp_1"
+            app:tabMaxWidth="@dimen/dp_90"
+            app:tabMode="scrollable"
+            app:tabSelectedTextColor="@color/selected"
+            app:tabTextColor="@color/unselected"
+            tools:background="@color/green"/>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_mark_classify"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:background="@color/brown"/>
+    </LinearLayout>
+</LinearLayout>

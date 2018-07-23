@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.SearchContActivity">
+
+    <include layout="@layout/toolbar_common"/>
+
+    <LinearLayout
+        android:id="@+id/ll_search_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:layout_marginBottom="@dimen/dp_5"
+        android:layout_marginEnd="@dimen/dp_10"
+        android:layout_marginStart="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_5"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <com.allen.library.SuperButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:sCornersRadius="@dimen/dp_40"
+                app:sSolidColor="@color/white"
+                app:sStrokeColor="#C9C9C9"
+                app:sStrokeWidth="@dimen/sp_01"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical">
+
+                <EditText
+                    android:id="@+id/et_search_cont"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="@string/please_input_search_key"
+                    android:inputType="none"
+                    android:paddingEnd="@dimen/dp_10"
+                    android:paddingStart="@dimen/dp_10"
+                    android:singleLine="true"
+                    android:textSize="@dimen/sp_18"/>
+
+                <Button
+                    android:id="@+id/btn_search_cont"
+                    android:layout_width="@dimen/dp_25"
+                    android:layout_height="@dimen/dp_25"
+                    android:layout_marginEnd="@dimen/dp_10"
+                    android:background="@drawable/ic_search_disable"
+                    android:enabled="false"
+                    android:padding="@dimen/dp_5"
+                    tools:background="@drawable/ic_search_able"/>
+            </LinearLayout>
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/btn_cancel_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:minWidth="0dp"
+            android:paddingEnd="@dimen/dp_10"
+            android:paddingStart="@dimen/dp_10"
+            android:text="@string/cancel"
+            android:textColor="#333333"
+            android:textSize="@dimen/sp_18"/>
+    </LinearLayout>
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/srl_smart_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dp_50"
+        android:background="#F4F4F4"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        app:srlEnableAutoLoadMore="true"
+        app:srlEnableFooterFollowWhenLoadFinished="false"
+        app:srlEnableLoadMore="false"
+        app:srlEnableRefresh="false">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_cont_searched_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/dp_10"
+            android:layout_marginStart="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_5"
+            android:overScrollMode="never"
+            android:paddingEnd="@dimen/dp_5"
+            android:paddingStart="@dimen/dp_5"
+            tools:background="#00FF00"
+            tools:listitem="@layout/item_cont"/>
+
+        <com.scwang.smartrefresh.layout.footer.ClassicsFooter
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+    <include layout="@layout/layout_fab"/>
+</android.support.design.widget.CoordinatorLayout>

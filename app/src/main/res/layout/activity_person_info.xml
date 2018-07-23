@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.PersonInfoActivity">
+
+    <include layout="@layout/toolbar_common"/>
+
+    <FrameLayout
+        android:id="@+id/fl_change_avatar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_60"
+        android:background="@drawable/selector_square_click"
+        android:paddingEnd="@dimen/dp_20"
+        android:paddingStart="@dimen/dp_20">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/change_avatar"
+            android:textColor="#FF000000"
+            android:textSize="@dimen/sp_14"/>
+
+        <ImageView
+            android:id="@+id/iv_teacher_avatar"
+            android:layout_width="@dimen/dp_50"
+            android:layout_height="@dimen/dp_50"
+            android:layout_gravity="center_vertical|end"
+            android:contentDescription="@null"
+            tools:src="@drawable/ic_default_avatar"/>
+    </FrameLayout>
+
+    <include layout="@layout/horizontal_divider_line_5"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_60"
+        android:gravity="center_vertical"
+        android:paddingEnd="@dimen/dp_20"
+        android:paddingStart="@dimen/dp_20">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/telphone_no"
+            android:textColor="#FF000000"
+            android:textSize="@dimen/sp_14"/>
+
+        <TextView
+            android:id="@+id/tv_telphone_no"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:maxLength="11"
+            android:textColor="#999999"
+            android:textSize="@dimen/sp_14"
+            tools:text="17078020229"/>
+    </LinearLayout>
+
+    <include layout="@layout/horizontal_divider_line_1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_60"
+        android:gravity="center_vertical"
+        android:paddingEnd="@dimen/dp_20"
+        android:paddingStart="@dimen/dp_20">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/user_name"
+            android:textColor="#FF000000"
+            android:textSize="@dimen/sp_14"/>
+
+        <EditText
+            android:id="@+id/et_teacher_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="end"
+            android:hint="@string/please_input_name"
+            android:inputType="none"
+            android:maxLength="10"
+            android:textColor="#999999"
+            android:textSize="@dimen/sp_14"
+            tools:text="杨灯"/>
+    </LinearLayout>
+
+    <include layout="@layout/horizontal_divider_line_1"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_60"
+        android:paddingEnd="@dimen/dp_20"
+        android:paddingStart="@dimen/dp_20">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/sex"
+            android:textColor="#FF000000"
+            android:textSize="@dimen/sp_14"/>
+
+        <RadioGroup
+            android:id="@+id/rg_sex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/dp_5"
+                android:checked="true"
+                android:text="@string/male"
+                android:textColor="#999999"/>
+
+            <RadioButton
+                android:id="@+id/rb_female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/female"
+                android:textColor="#999999"/>
+        </RadioGroup>
+    </FrameLayout>
+
+    <include layout="@layout/horizontal_divider_line_5"/>
+</LinearLayout>

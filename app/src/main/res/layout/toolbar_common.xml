@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.AppBarLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/abl_title"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tb_commom_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/register_yellow_red"
+        app:layout_scrollFlags="scroll|enterAlways|snap"
+        app:navigationIcon="@drawable/ic_back"
+        app:theme="@style/ToolbarTheme">
+
+        <TextView
+            android:id="@+id/tv_commom_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ellipsize="end"
+            android:maxWidth="@dimen/dp_250"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_20"
+            tools:text="@string/title"/>
+
+        <TextView
+            android:id="@+id/tv_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginEnd="@dimen/dp_10"
+            android:background="@drawable/selector_square_click"
+            android:drawableEnd="@drawable/ic_down_arrow"
+            android:padding="@dimen/dp_5"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            tools:text="测试 "
+            tools:visibility="visible"/>
+
+        <ImageView
+            android:id="@+id/iv_more"
+            android:layout_width="@dimen/action_bar_size"
+            android:layout_height="@dimen/action_bar_size"
+            android:layout_gravity="end"
+            android:background="@drawable/selector_circle_click"
+            android:contentDescription="@null"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_more"
+            android:visibility="gone"
+            tools:visibility="visible"/>
+    </android.support.v7.widget.Toolbar>
+</android.support.design.widget.AppBarLayout>

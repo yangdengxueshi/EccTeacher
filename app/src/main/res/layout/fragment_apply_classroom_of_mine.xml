@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.scwang.smartrefresh.layout.SmartRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/srl_smart_refresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEEEE"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    app:srlEnableAutoLoadMore="true"
+    app:srlEnableFooterFollowWhenLoadFinished="false"
+    app:srlEnableRefresh="false"
+    tools:context=".fragment.ApplyClassroomOfMineFragment">
+
+    <cn.dreamtobe.kpswitch.widget.KPSwitchRootLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_replly_classroom_of_mine"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:overScrollMode="never"
+            android:padding="@dimen/dp_5"
+            tools:background="#00FF00"
+            tools:listitem="@layout/item_all_apply_classroom_recyclerview"/>
+
+        <include layout="@layout/bar_conment_reply"/>
+    </cn.dreamtobe.kpswitch.widget.KPSwitchRootLinearLayout>
+
+    <com.scwang.smartrefresh.layout.footer.ClassicsFooter
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</com.scwang.smartrefresh.layout.SmartRefreshLayout>

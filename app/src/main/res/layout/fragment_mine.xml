@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/srl_swipe_refresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F4F4"
+    tools:context=".fragment.MineFragment">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.classic.common.MultipleStatusView
+            android:id="@+id/refresh_multiple_status_view"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/bg_person_cover"
+            android:gravity="center"
+            app:emptyView="@layout/custom_empty_view"
+            app:errorView="@layout/custom_error_view"
+            app:layout_constraintDimensionRatio="H,15:7"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:loadingView="@layout/custom_loading_view"
+            app:noNetworkView="@layout/custom_no_network_view">
+
+            <com.github.chrisbanes.photoview.PhotoView
+                android:id="@+id/pv_teacher_avatar"
+                android:layout_width="@dimen/dp_110"
+                android:layout_height="@dimen/dp_110"
+                android:background="@drawable/bg_teacher_avatar"
+                android:padding="@dimen/dp_8"
+                android:transitionName="@string/picture_detail"
+                tools:src="@drawable/ic_default_avatar"/>
+
+            <com.allen.library.SuperButton
+                android:id="@+id/sb_teacher_name"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_below="@id/pv_teacher_avatar"
+                android:layout_margin="@dimen/dp_5"
+                android:minWidth="@dimen/dp_100"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_18"
+                app:sCornersRadius="@dimen/dp_40"
+                app:sSolidColor="#4D000000"
+                tools:text="@string/title"/>
+        </com.classic.common.MultipleStatusView>
+
+        <com.allen.library.SuperTextView
+            android:id="@+id/stv_person_info"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_60"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/refresh_multiple_status_view"
+            app:sDividerLineType="both"
+            app:sLeftIconRes="@drawable/ic_person_info"
+            app:sLeftTextSize="@dimen/sp_18"
+            app:sLeftTextString="@string/person_info"
+            app:sRightIconRes="@drawable/ic_more_arrow"/>
+
+        <com.allen.library.SuperTextView
+            android:id="@+id/stv_setting"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_60"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/stv_person_info"
+            app:sDividerLineType="both"
+            app:sLeftIconRes="@drawable/ic_setting"
+            app:sLeftTextSize="@dimen/sp_18"
+            app:sLeftTextString="@string/setting"
+            app:sRightIconRes="@drawable/ic_more_arrow"/>
+    </android.support.constraint.ConstraintLayout>
+</android.support.v4.widget.SwipeRefreshLayout>

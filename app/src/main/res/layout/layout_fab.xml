@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.FloatingActionButton
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fab_top"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="end|bottom"
+    android:layout_marginBottom="@dimen/dp_60"
+    android:layout_marginEnd="@dimen/dp_5"
+    android:scaleType="center"
+    android:src="@drawable/ic_top"
+    app:backgroundTint="#00000000"
+    app:borderWidth="0dp"
+    app:elevation="0dp"
+    app:layout_behavior="@string/bye_burger_float_behavior"/>

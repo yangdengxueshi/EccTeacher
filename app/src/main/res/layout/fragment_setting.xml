@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_titlebar"/>
+
+    <com.allen.library.SuperTextView
+        android:id="@+id/stv_modify_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_60"
+        app:sDividerLineType="bottom"
+        app:sLeftTextString="@string/modify_pwd"
+        app:sRightIconRes="@drawable/ic_more_arrow"/>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_5"
+        android:background="#F4F4F4"/>
+
+    <com.allen.library.SuperTextView
+        android:id="@+id/stv_check_to_update"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_60"
+        app:sCenterViewGravity="left_center"
+        app:sLeftTextString="@string/check_to_update"
+        app:sRightTextColor="@color/gray"
+        tools:sRightTextString="1.2.8"
+        tools:sRightTvDrawableLeft="@drawable/shape_update_badge"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_5"
+        android:background="#F4F4F4"/>
+
+    <com.allen.library.SuperTextView
+        android:id="@+id/stv_log_off"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_60"
+        app:sLeftTextString="@string/log_off"/>
+</LinearLayout>

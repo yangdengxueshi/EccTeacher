@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/dp_20">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_5">
+
+        <ImageView
+            android:id="@+id/iv_applyer_avatar"
+            android:layout_width="@dimen/dp_60"
+            android:layout_height="@dimen/dp_60"
+            android:layout_marginEnd="@dimen/dp_20"
+            android:contentDescription="@null"
+            tools:background="#00FF00"
+            tools:src="@drawable/ic_default_avatar"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            tools:background="#FF0000">
+
+            <TextView
+                android:id="@+id/tv_applyer_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_5"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="#343434"
+                android:textSize="@dimen/sp_14"
+                tools:text="申请人"/>
+
+            <TextView
+                android:id="@+id/tv_apply_place_and_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#77DAEF"
+                android:textSize="@dimen/sp_10"
+                tools:text="一教学楼203室 2018/3/6 16:30~19:00"/>
+
+            <TextView
+                android:id="@+id/tv_apply_digist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_5"
+                android:layout_marginTop="@dimen/dp_5"
+                android:textColor="#969696"
+                android:textSize="@dimen/sp_12"
+                tools:text="申请教室的具体事由,申请教室的具体事由,申请教室的具体事由,申请教室的具体事由,申请教室的具体事由."/>
+
+            <TextView
+                android:id="@+id/tv_submit_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="#999999"
+                android:textSize="@dimen/sp_10"
+                tools:text="提交于2018年5月30日 19:39"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/sp_10"
+                android:layout_marginTop="@dimen/dp_10">
+
+                <TextView
+                    android:id="@+id/tv_agree"
+                    android:layout_width="@dimen/dp_70"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/dp_20"
+                    android:background="@drawable/bg_agree"
+                    android:gravity="center"
+                    android:padding="@dimen/dp_2"
+                    android:text="@string/agree"
+                    android:textColor="#22D378"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/tv_cancel"
+                    android:layout_width="@dimen/dp_70"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_cancel"
+                    android:gravity="center"
+                    android:padding="@dimen/dp_2"
+                    android:text="@string/cancel_apply"
+                    android:textColor="#EA855B"/>
+
+                <TextView
+                    android:id="@+id/tv_disagree"
+                    android:layout_width="@dimen/dp_70"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_20"
+                    android:background="@drawable/bg_disagree"
+                    android:gravity="center"
+                    android:padding="@dimen/dp_2"
+                    android:text="@string/disagree"
+                    android:textColor="#999999"
+                    android:visibility="gone"/>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_reply"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:contentDescription="@null"
+                android:padding="@dimen/dp_5"
+                android:src="@drawable/ic_reply"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_apply_status"
+        android:layout_width="39dp"
+        android:layout_height="34dp"
+        android:layout_gravity="end"
+        android:contentDescription="@null"
+        tools:src="@drawable/ic_not_allow"/>
+</FrameLayout>
